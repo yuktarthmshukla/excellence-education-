@@ -32,15 +32,26 @@ export default function Footer() {
               Your trusted partner for visa consultancy and English language coaching. Serving 50,000+ students since 2014.
             </p>
             <div className="flex gap-3">
-              {[Facebook, Instagram, Twitter].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#FF8C42] flex items-center justify-center transition-colors duration-200"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#FF8C42] flex items-center justify-center transition-colors duration-200"
+              >
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/miteshshukla21/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#FF8C42] flex items-center justify-center transition-colors duration-200"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href="#"
+                className="w-9 h-9 rounded-full bg-gray-800 hover:bg-[#FF8C42] flex items-center justify-center transition-colors duration-200"
+              >
+                <Twitter className="w-4 h-4" />
+              </a>
             </div>
           </div>
 
