@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -44,7 +44,7 @@ const values = [
 ];
 
 const team = [
-  { name: "Mitesh Shukla", role: "Founder", img: "https://picsum.photos/seed/person1/300/300" },
+  { name: "Mitesh Shukla", role: "Founder", img: "/images/founder-mitesh.jpg" },
   { name: "Sonal Shukla", role: "Classes Head", img: "https://picsum.photos/seed/person2/300/300" },
 ];
 
@@ -96,7 +96,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-gray-400 text-xl leading-relaxed"
           >
-            Over a decade of transforming dreams into destinations — one student at a time.
+            Over a decade of transforming dreams into destinations â€” one student at a time.
           </motion.p>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Over 10 years, what started as a small visa consultancy grew into a comprehensive
-                  education hub — offering not just visa services for UK, USA, Canada, Australia and
+                  education hub â€” offering not just visa services for UK, USA, Canada, Australia and
                   Germany, but world-class coaching for IELTS, PTE, Duolingo and Spoken English.
                 </p>
                 <p>
@@ -158,7 +158,7 @@ export default function AboutPage() {
               Our <span className="gradient-text">Core Values</span>
             </h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              These six pillars guide everything we do — from visa advice to classroom coaching.
+              These six pillars guide everything we do â€” from visa advice to classroom coaching.
             </p>
           </Section>
 
@@ -224,3 +224,4 @@ export default function AboutPage() {
     </div>
   );
 }
+
