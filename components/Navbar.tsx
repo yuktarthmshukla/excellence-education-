@@ -47,10 +47,10 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block">
                 <div className="text-base font-900 font-black text-gray-900 leading-tight">
-                  Excellence
+                  EXCELLENCE
                 </div>
                 <div className="text-xs font-semibold text-[#FF8C42] leading-tight -mt-0.5">
-                  Education & Visa
+                  EDUCATION & OVERSEAS
                 </div>
               </div>
             </Link>
@@ -124,7 +124,7 @@ export default function Navbar() {
                   <div className="w-9 h-9 rounded-xl bg-[#FF8C42] flex items-center justify-center">
                     <GraduationCap className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-black text-gray-900">Excellence</span>
+                  <span className="font-black text-gray-900">EXCELLENCE EDUCATION & OVERSEAS</span>
                 </div>
                 <button
                   onClick={() => setOpen(false)}
