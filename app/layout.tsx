@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Poppins, Geist } from "next/font/google";
+import { Oswald, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-oswald",
+  display: "swap",
+});
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -32,8 +37,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={cn(poppins.variable, "font-sans", geist.variable)}>
-      <body className="min-h-screen flex flex-col antialiased" style={{ fontFamily: "'Poppins', sans-serif" }}>
+    <html lang="en" className={cn(oswald.variable, poppins.variable)}>
+      <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

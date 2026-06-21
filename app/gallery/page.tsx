@@ -5,21 +5,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { id: 1, src: "https://picsum.photos/seed/gal1/800/600", thumb: "https://picsum.photos/seed/gal1/400/300", alt: "Students in classroom", category: "Coaching", w: 2, h: 2 },
-  { id: 2, src: "https://picsum.photos/seed/gal2/600/800", thumb: "https://picsum.photos/seed/gal2/300/400", alt: "UK university campus", category: "UK", w: 1, h: 2 },
-  { id: 3, src: "https://picsum.photos/seed/gal3/800/500", thumb: "https://picsum.photos/seed/gal3/400/250", alt: "IELTS preparation", category: "IELTS", w: 2, h: 1 },
-  { id: 4, src: "https://picsum.photos/seed/gal4/600/600", thumb: "https://picsum.photos/seed/gal4/300/300", alt: "Visa documents", category: "Visa", w: 1, h: 1 },
-  { id: 5, src: "https://picsum.photos/seed/gal5/800/600", thumb: "https://picsum.photos/seed/gal5/400/300", alt: "Australia skyline", category: "Australia", w: 2, h: 1 },
-  { id: 6, src: "https://picsum.photos/seed/gal6/600/600", thumb: "https://picsum.photos/seed/gal6/300/300", alt: "Group discussion", category: "Coaching", w: 1, h: 1 },
-  { id: 7, src: "https://picsum.photos/seed/gal7/600/800", thumb: "https://picsum.photos/seed/gal7/300/400", alt: "Canada mountains", category: "Canada", w: 1, h: 2 },
-  { id: 8, src: "https://picsum.photos/seed/gal8/800/600", thumb: "https://picsum.photos/seed/gal8/400/300", alt: "PTE coaching", category: "PTE", w: 2, h: 1 },
-  { id: 9, src: "https://picsum.photos/seed/gal9/600/600", thumb: "https://picsum.photos/seed/gal9/300/300", alt: "Study abroad", category: "Visa", w: 1, h: 1 },
-  { id: 10, src: "https://picsum.photos/seed/gal10/800/500", thumb: "https://picsum.photos/seed/gal10/400/250", alt: "USA campus", category: "USA", w: 2, h: 1 },
-  { id: 11, src: "https://picsum.photos/seed/gal11/600/600", thumb: "https://picsum.photos/seed/gal11/300/300", alt: "Spoken English class", category: "Coaching", w: 1, h: 1 },
+  // Real institute images
+  { id: 1,  src: "/images/gallery-classroom-1.jpg", thumb: "/images/gallery-classroom-1.jpg", alt: "Students writing in classroom", category: "Institute", w: 2, h: 2 },
+  { id: 2,  src: "/images/gallery-students-2.jpg",  thumb: "/images/gallery-students-2.jpg",  alt: "Female students attending class", category: "Institute", w: 1, h: 2 },
+  { id: 3,  src: "/images/gallery-batch.jpg",        thumb: "/images/gallery-batch.jpg",        alt: "Instructor teaching a large batch", category: "Coaching", w: 2, h: 1 },
+  { id: 4,  src: "/images/gallery-consulting.jpg",   thumb: "/images/gallery-consulting.jpg",   alt: "Mitesh Shukla consulting at his desk", category: "Institute", w: 1, h: 1 },
+  { id: 5,  src: "/images/gallery-exterior.jpg",     thumb: "/images/gallery-exterior.jpg",     alt: "Excellence Education institute exterior", category: "Institute", w: 2, h: 1 },
+  // Default stock images
+  { id: 6,  src: "https://picsum.photos/seed/gal2/600/800",  thumb: "https://picsum.photos/seed/gal2/300/400",  alt: "UK university campus", category: "UK", w: 1, h: 2 },
+  { id: 7,  src: "https://picsum.photos/seed/gal3/800/500",  thumb: "https://picsum.photos/seed/gal3/400/250",  alt: "IELTS preparation", category: "IELTS", w: 2, h: 1 },
+  { id: 8,  src: "https://picsum.photos/seed/gal4/600/600",  thumb: "https://picsum.photos/seed/gal4/300/300",  alt: "Visa documents", category: "Visa", w: 1, h: 1 },
+  { id: 9,  src: "https://picsum.photos/seed/gal5/800/600",  thumb: "https://picsum.photos/seed/gal5/400/300",  alt: "Australia skyline", category: "Australia", w: 2, h: 1 },
+  { id: 10, src: "https://picsum.photos/seed/gal7/600/800",  thumb: "https://picsum.photos/seed/gal7/300/400",  alt: "Canada mountains", category: "Canada", w: 1, h: 2 },
+  { id: 11, src: "https://picsum.photos/seed/gal10/800/500", thumb: "https://picsum.photos/seed/gal10/400/250", alt: "USA campus", category: "USA", w: 2, h: 1 },
   { id: 12, src: "https://picsum.photos/seed/gal12/600/800", thumb: "https://picsum.photos/seed/gal12/300/400", alt: "Germany university", category: "Germany", w: 1, h: 2 },
 ];
 
-const categories = ["All", "Coaching", "Visa", "UK", "USA", "Canada", "Australia", "Germany", "IELTS", "PTE"];
+const categories = ["All", "Institute", "Coaching", "Visa", "UK", "USA", "Canada", "Australia", "Germany", "IELTS"];
 
 export default function GalleryPage() {
   const [filter, setFilter] = useState("All");

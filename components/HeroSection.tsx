@@ -129,8 +129,8 @@ export default function HeroSection() {
             {/* Main image card */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="https://picsum.photos/seed/education1/700/500"
-                alt="Students studying abroad"
+                src="/images/hero-banner.jpeg"
+                alt="Excellence Education and Overseas Consultancy — Mitesh Shukla"
                 className="w-full h-[450px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
